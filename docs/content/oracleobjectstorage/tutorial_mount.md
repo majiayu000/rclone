@@ -222,7 +222,7 @@ rclone mount \
     --cache-dir /tmp/rclone/cache       # Directory rclone will use for caching.
     --dir-cache-time 5m \               # Time to cache directory entries for (default 5m0s)
     --vfs-cache-mode writes \           # Cache mode off|minimal|writes|full (default off), writes gives the maximum compatibility like a local disk
-    --vfs-cache-max-age 20m \           # Max age of objects in the cache (default 1h0m0s)
+    --vfs-cache-max-age 20m \           # Max time since last access of objects in the cache (default 1h0m0s)
     --vfs-cache-max-size 10G \          # Max total size of objects in the cache (default off)
     --vfs-cache-poll-interval 1m \      # Interval to poll the cache for stale objects (default 1m0s)
     --vfs-write-back 5s   \             # Time to writeback files after last use when using cache (default 5s). 
