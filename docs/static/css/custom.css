@@ -206,3 +206,162 @@ nav#TableOfContents ul {
 nav#TableOfContents ul:hover {
     overflow: visible;
 }
+
+/* Dark theme using prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+    /* Base colors */
+    body {
+        background-color: #1a1a2e;
+        color: #e0e0e0;
+    }
+
+    /* Links - keep brand colors but adjust for dark background */
+    a {
+        color: #70caf2;
+    }
+    a:hover {
+        color: #a8dcf5;
+    }
+
+    /* Tables */
+    table {
+        background-color: #252540;
+    }
+    tbody td, th {
+        border: 1px solid #404060;
+    }
+    thead td, th {
+        background-color: #2d2d4a;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #2a2a45;
+    }
+
+    /* Code blocks */
+    pre {
+        color: #e0e0e0;
+        background-color: #252540;
+        border: 1px solid #404060;
+    }
+    code {
+        color: #f292c0;
+    }
+
+    /* Blockquotes */
+    blockquote {
+        background-color: #252540;
+        border: 1px solid #404060;
+    }
+
+    /* Cards */
+    .card {
+        background-color: #252540;
+        border-color: #404060;
+    }
+    .card-header {
+        background-color: #2d2d4a;
+        border-color: #404060;
+        color: #e0e0e0;
+    }
+    .card-body {
+        background-color: #252540;
+    }
+
+    /* Footer */
+    footer .card {
+        background-color: #1e1e32;
+    }
+    footer .card-body {
+        background-color: #1e1e32;
+    }
+
+    /* Bootstrap dropdown menus */
+    .dropdown-menu {
+        background-color: #252540;
+        border-color: #404060;
+    }
+    .dropdown-item {
+        color: #e0e0e0;
+    }
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: #2d2d4a;
+        color: #70caf2;
+    }
+    .dropdown-divider {
+        border-color: #404060;
+    }
+
+    /* Form inputs */
+    .form-control {
+        background-color: #252540;
+        border-color: #404060;
+        color: #e0e0e0;
+    }
+    .form-control::placeholder {
+        color: #808090;
+    }
+    .form-control:focus {
+        background-color: #2d2d4a;
+        border-color: #70caf2;
+        color: #e0e0e0;
+    }
+
+    /* Badges */
+    .badge-secondary {
+        background-color: #404060;
+        color: #e0e0e0;
+    }
+
+    /* Keep buttons with brand colors */
+    .btn-primary {
+        background-color: #3f79ad;
+        border-color: #3f79ad;
+    }
+    .btn-primary:hover {
+        background-color: #70caf2;
+        border-color: #70caf2;
+    }
+
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 {
+        color: #f0f0f0;
+    }
+
+    /* Header link on hover */
+    .header-link {
+        color: #70caf2;
+    }
+
+    /* Horizontal rules */
+    hr {
+        border-color: #404060;
+    }
+
+    /* Images - add slight background for transparent images */
+    img {
+        background-color: transparent;
+    }
+
+    /* Scrollbar styling for dark mode */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #1a1a2e;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #404060;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #505080;
+    }
+
+    /* Selection highlighting */
+    ::selection {
+        background-color: #3f79ad;
+        color: #ffffff;
+    }
+}
